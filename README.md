@@ -14,9 +14,7 @@ A simple Java-based task tracker that allows users to add, edit, delete, and sor
 
 - Java (Standard Edition)
 - Java Collections Framework
-- Java Time API (`java.time.LocalDate`)
 - File I/O (`BufferedReader`, `BufferedWriter`, `FileReader`, `FileWriter`)
-- (Optional) IntelliJ IDEA or VS Code
 
 ## 📸 Example Output
 
@@ -42,19 +40,6 @@ javac -d out src/*.java
 java -cp out Main
 Or open in an IDE like IntelliJ and run Main.java.
 
-📁 Project Structure
-arduino
-Copy
-Edit
-Task-Tracker/
-├── src/
-│   ├── Main.java
-│   ├── Task.java
-│   └── TaskManager.java
-├── data/
-│   └── tasks.txt  ← (auto-created when saving tasks)
-├── README.md
-└── .gitignore
 📌 Future Enhancements
 GUI with JavaFX or Swing
 
