@@ -9,6 +9,7 @@ A simple Java-based task tracker that allows users to add, edit, delete, and sor
 - Mark tasks as complete
 - Sort tasks by due date or priority
 - Save tasks to a file and load them later
+- File-based repository system for persistence (via `FileTaskRepository`)
 
 ## 📦 Technologies Used
 
@@ -18,12 +19,8 @@ A simple Java-based task tracker that allows users to add, edit, delete, and sor
 
 ## 📸 Example Output
 
-[1] Finish Java project | Due: 2025-08-01 | Priority: HIGH | ❌ Incomplete
+[1] Finish Java project | Due: 2025-08-01 | Priority: HIGH | ❌ Incomplete  
 [2] Submit resume | Due: 2025-08-05 | Priority: MEDIUM | ✅ Done
-
-bash
-Copy
-Edit
 
 ## 🛠️ How to Run
 
@@ -31,23 +28,21 @@ Edit
    ```bash
    git clone https://github.com/your-username/Task-Tracker.git
    cd Task-Tracker
-Compile and run (using terminal):
 
-bash
-Copy
-Edit
-javac -d out src/*.java
-java -cp out Main
-Or open in an IDE like IntelliJ and run Main.java.
+2. Compile and run (using terminal):
+
+   ```bash
+   javac -d out src/model/*.java src/manager/*.java src/repository/*.java src/App.java
+   java -cp out App
+
+3. Or open in an IDE like IntelliJ and run App.java.
 
 📌 Future Enhancements
-GUI with JavaFX or Swing
 
-Export to CSV or JSON
-
-Recurring tasks or reminders
-
-Web version with Spring Boot
+- GUI with JavaFX or Swing
+- Export to JSON
+- Recurring tasks or reminders
+- Web version with Spring Boot
 
 🧑‍💻 Author
 Matt Zaleski
